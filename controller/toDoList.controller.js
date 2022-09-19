@@ -1,5 +1,5 @@
 const db = require("../model");
-var ToDoList = db.toDoLists;
+const ToDoList = db.toDoLists;
 
 // Add and save a new ToDO List
 exports.create = (req, res) => {
@@ -10,6 +10,7 @@ exports.create = (req, res) => {
     }
     // create a todo list
     const toDoList = new ToDoList({
+
         title: req.body.title,
         description: req.body.description
     });
