@@ -10,7 +10,6 @@ exports.create = (req, res) => {
     }
     // create a todo list
     const toDoList = new ToDoList({
-
         title: req.body.title,
         description: req.body.description
     });
@@ -36,7 +35,6 @@ exports.findAll = (req, res) => {
         .catch(err => {
             res.status(500).send({ message: err.message || "error while retrieving todo collection" });
         });
-
 };
 
 // Retrieve a todo list by Id
