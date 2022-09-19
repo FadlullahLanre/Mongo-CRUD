@@ -16,7 +16,7 @@ pids
 *.pid.lock
 
 # Config
-config/
+
 
 # package-lock.json
 .package-lock.json
@@ -43,6 +43,7 @@ bower_components
 build/Release
 
 # Dependency directories
+node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
