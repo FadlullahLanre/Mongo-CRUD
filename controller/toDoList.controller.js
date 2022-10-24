@@ -81,7 +81,7 @@ exports.delete = (req, res) => {
             if (!data) {
                 res.status(404).send({ message: `Cannot delete Todo list with id=${id}. Maybe Todo list was not found!` })
             } else {
-                res.send({ message: "Todo list was updated successfully!" })
+                res.send({ message: "Todo list was deleted successfully!" })
             }
         })
         .catch(err => {
